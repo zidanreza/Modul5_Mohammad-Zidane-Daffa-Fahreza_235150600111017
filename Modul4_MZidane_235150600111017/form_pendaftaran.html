@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran</title>
+  <style>
+    table {
+      margin: auto;
+      border-collapse: separate;
+      border-spacing: 10px;
+    }
+    td {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">Formulir Pendaftaran Siswa Baru</h1>
+  <form>
+    <table>
+      <tr>
+        <td>Nama Lengkap:</td>
+        <td><input type="text" name="nama"></td>
+      </tr>
+      <tr>
+        <td>Alamat:</td>
+        <td><textarea name="alamat"></textarea></td>
+      </tr>
+      <tr>
+        <td>Tempat Lahir:</td>
+        <td><input type="teks" name="tempat_lahir"></td>
+      </tr>
+      <tr>
+        <td>Tanggal Lahir:</td>
+        <td><input type="date" name="tanggal_lahir"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin:</td>
+        <td>
+          <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+          <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+        </td>
+      </tr>
+      <tr>
+        <td>Pilihan Jurusan:</td>
+        <td>
+          <input type="checkbox" name="jurusan[]" value="TKRO"> TKRO
+          <input type="checkbox" name="jurusan[]" value="TEI"> TEI
+          <input type="checkbox" name="jurusan[]" value="TKJ"> TKJ
+        </td>
+      </tr>
+      <tr>
+        <td>Agama:</td>
+        <td>
+          <select name="agama">
+            <option value="">--Pilih Agama--</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>No HP:</td>
+        <td><input type="number" name="no_hp"></td>
+      </tr>
+      <tr>
+        <td>Foto Diri:</td>
+        <td><input type="file" name="foto" accept="image/*"></td>
+      </tr>
+      <tr>
+        <td>Sekolah Pilihan:</td>
+        <td>
+          <select name="sekolah_pilihan">
+            <option value="">--Pilih Sekolah--</option>
+            <option value="SMK 3 Boyolangu">SMK 3 Boyolangu</option>
+            <option value="SMK Sore">SMK Sore</option>
+            <option value="SMK 3 Boyolangu">SMK 1 Boyolangu</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <div class="buttons">
+      <input type="submit" value="Kirim">
+      <input type="reset" value="Reset">
+    </div>
+    <br>
+  </form>
+  <div>
+    <a href="index.html" target="_blank">← Kembali ke Halaman Utama</a>
+  </div>
+</body>
+</html>
